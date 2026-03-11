@@ -29,3 +29,15 @@ string kondisiBMI(float bmi) {
         return "Obesitas";
     }
 }
+
+int main() {
+    float berat, tinggi, bmi;
+
+    inputData(berat, tinggi); // memanggil prosedur input
+    bmi = hitungBMI(berat, tinggi); // memanggil fungsi hitung BMI
+
+    cout << "Nilai BMI : " << bmi << endl;
+    cout << "Kondisi : " << kondisiBMI(bmi) << endl;
+
+    return 0;
+}
